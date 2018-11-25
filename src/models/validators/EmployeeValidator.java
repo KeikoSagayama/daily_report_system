@@ -21,7 +21,7 @@ public class EmployeeValidator {
         errors.add(code_error);
     }
 
-    String name_error = validateName(e.getName());
+    String name_error = _validateName(e.getName());
     if(!name_error.equals("")){
         errors.add(name_error);
     }
@@ -38,17 +38,13 @@ public class EmployeeValidator {
     }
 
 
-    private static String validateName(String name) {
-        // TODO 自動生成されたメソッド・スタブ
-        return null;
-    }
-
 
     private static String _validateCode(String code, Boolean code_duplicate_check_flag){
 
     if(code==null||code.equals("")){
         return "社員番号を入力してください" ;
     }
+
 
     if( code_duplicate_check_flag){
         EntityManager em = DBUtil.createEntityManager();
@@ -82,17 +78,11 @@ return"";
 }
 
 private static String _validatePassword(String password, Boolean password_check_flag){
-
-
-
 if(password_check_flag && (password == null || password.equals(""))){
     return "パスワードを入力してください" ;
 }
 
-
-
 return"";
-
 
 
     }

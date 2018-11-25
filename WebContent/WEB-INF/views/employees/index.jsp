@@ -4,13 +4,13 @@
 <c:import url="../layout/app.jsp">
 	<c:param name="content">
 		<c:if test="${flush !=null}">
-			<div id="flush success">
+			<div id="flush_success">
 				<c:out value="${flush}"></c:out>
 			</div>
 
 		</c:if>
 
-		<h2>従業員一覧</h2>
+		<h2>従業員 一覧</h2>
 
 		<table id="eomployee_list">
 			<tbody>
