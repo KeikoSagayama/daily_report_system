@@ -19,16 +19,13 @@ body {
 }
 
 h1 {
-	width: 94% ;
-	padding-top: 17px;
-	padding-left: 3%;
 	font-size: 24px;
-	color: #eeeeee;
+	display: inline;
 }
 
 h2 {
 	font-size: 36px;
-	 margin-bottom: 15px;
+	margin-bottom: 15px;
 }
 
 li {
@@ -52,83 +49,93 @@ table, tr, th, td {
 
 table {
 	width: 100%;
-	 table-layout: fixed;
+	table-layout: fixed;
 }
 
 th {
 	width: 26%;
-	 padding: 10px 2%;
+	padding: 10px 2%;
 }
 
 td {
-	width : 26%
-	padding : 10px 2%;
+	width: 26% padding: 10px 2%;
 }
 
 td {
-	width : 66%;
+	width: 66%;
 	padding: 10px 2%;
 }
 
 button {
-    font-size : 14px;
-    padding: 5psx 10px;
+	font-size: 14px;
+	padding: 5psx 10px;
 }
+
 #footer {
 	text-align: center;
 }
 
 #flush_success {
-    width: 100% ;
-    padding-top: 28px;
-    padding-left: 2%;
-    padding-bottom: 28px;
-    margin-bottom: 15px;
-    color: #155724;
-    background-color: #d4edda;
-
+	width: 100%;
+	padding-top: 28px;
+	padding-left: 2%;
+	padding-bottom: 28px;
+	margin-bottom: 15px;
+	color: #155724;
+	background-color: #d4edda;
 }
 
 #flush_error {
-    width: 100% ;
-    padding-top: 28px;
-    padding-left: 2%;
-    padding-bottom: 28px;
-    margin-bottom: 15px;
-    color: #721c24;
-    background-color: #f8d7da;
-
+	width: 100%;
+	padding-top: 28px;
+	padding-left: 2%;
+	padding-bottom: 28px;
+	margin-bottom: 15px;
+	color: #721c24;
+	background-color: #f8d7da;
 }
 
 table#employee_list th {
-    width : 30%;
-    padding: 10px 2%;
+	width: 30%;
+	padding: 10px 2%;
 }
 
-
 table#employee_list td {
-    width : 29%;
-    padding: 10px 2%;
+	width: 29%;
+	padding: 10px 2%;
 }
 
 tr.row1 {
-   background-color: #f2f2f2;
+	background-color: #f2f2f2;
 }
-
 
 tr.row0 {
-   background-color: #ffffff;
+	background-color: #ffffff;
 }
 
-
-select{
+select {
 	height: 30px;
 }
 
+#header_menu {
+	width: 57%;
+	padding-top: 17px;
+	padding-left: 3%;
+	display: inline-block;
+}
 
+#employee_name {
+	color: #cccccc;
+	width: 36%;
+	padding-right: 3%;
+	text-align: right;
+	display: inline-block;
+}
 
+#header a {
+	color: #eeeeee;
+}
 
-
-
-
-
+h1 a {
+	color: #eeeeee;
+}
