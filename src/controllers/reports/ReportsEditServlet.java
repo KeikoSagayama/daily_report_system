@@ -20,7 +20,7 @@ import utils.DBUtil;
 @WebServlet("/reports/edit")
 public class ReportsEditServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -34,25 +34,25 @@ public class ReportsEditServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		
+
 
         EntityManager em = DBUtil.createEntityManager();
 
            Report r =  em.find(Report.class, Integer.parseInt(request.getParameter("id")));
            em.close();
-          
-           
+
+
           Employee login_employee=(Employee) request.getSession().getAttribute("login_employee");
            if(login_employee.getId() == r.getEmployee().getId()){
            request.setAttribute("report", r);
            request.setAttribute("_token", request.getSession().getId());
            request.getSession().setAttribute("report_id",r.getId());
 	}
-           RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/repors/edit.jsp");
+           RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/reports/edit.jsp");
            rd.forward(request, response);
        }
 
-		
+
 	}
 
 
